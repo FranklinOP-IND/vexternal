@@ -3,7 +3,7 @@
 #include <cstdint>
 
 namespace offsets {
-	constexpr uintptr_t uworld_key = 0x86DA078;
+	constexpr uintptr_t uworld_key = 0x9030878;
 	constexpr uintptr_t uworld_state = 0x86DA040;
 
 	constexpr uintptr_t game_instance = 0x1A8; // world + game_instance // TYPE=uintptr_t
@@ -11,18 +11,18 @@ namespace offsets {
 
 	constexpr uintptr_t local_player_array = 0x40; // game_instance + local_player_array // TYPE=uintptr_t
 	constexpr uintptr_t local_player_controller = 0x38; // local_player + local_player_controller // TYPE=uintptr_t
-	constexpr uintptr_t local_player_pawn = 0x440; // local_player_controller + local_player_pawn // TYPE=uintptr_t (=actor)
+	constexpr uintptr_t local_player_pawn = 0x460; // local_player_controller + local_player_pawn // TYPE=uintptr_t (=actor)
 	constexpr uintptr_t control_rotation = 0x420; // local_player_controller + control_rotation // TYPE=Vector3
 
-	constexpr uintptr_t camera_manager = 0x458; // local_player_controller + camera_manager // TYPE=uintptr_t
-	constexpr uintptr_t camera_position = 0x1220; // camera_manager + camera_position // TYPE=Vector3
-	constexpr uintptr_t camera_rotation = 0x122C; // camera_manager + camera_rotation // TYPE=Vector3
-	constexpr uintptr_t camera_fov = 0x1238; // camera_manager + camera_fov // TYPE=float
+	constexpr uintptr_t camera_manager = 0x478; // local_player_controller + camera_manager // TYPE=uintptr_t
+	constexpr uintptr_t camera_position = 0x1240; // camera_manager + camera_position // TYPE=Vector3
+	constexpr uintptr_t camera_rotation = 0x124C;  // camera_manager + camera_rotation // TYPE=Vector3
+	constexpr uintptr_t camera_fov = 0x1258;  // camera_manager + camera_fov // TYPE=float
 
 	constexpr uintptr_t actor_array = 0xA0; // persistent_level + actor_array // TYPE=uintptr_t
 	constexpr uintptr_t actor_count = 0xB8; // persistent_level + actor_count // TYPE=int
 
-	constexpr uintptr_t unique_id = 0x38; // actor + actor_id // TYPE=uintptr_t
+	constexpr uintptr_t unique_id = 0x18;  // actor + actor_id // TYPE=uintptr_t
 	constexpr uintptr_t mesh_component = 0x410; // actor + mesh_component // TYPE=uintptr_t
 	constexpr uintptr_t last_render_time = 0x350; // mesh_component + last_render_time // TYPE=float
 	constexpr uintptr_t last_submit_time = 0x358; // mesh_component + last_submit_time // TYPE=float
