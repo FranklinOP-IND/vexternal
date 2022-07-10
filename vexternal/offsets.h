@@ -3,10 +3,10 @@
 #include <cstdint>
 
 namespace offsets {
-	constexpr uintptr_t uworld_key = 0x9030878;
-	constexpr uintptr_t uworld_state = 0x86DA040;
+	constexpr uintptr_t uworld_key = 0x87FCD38; //ok
+	constexpr uintptr_t uworld_state = 0x87FCD00;  //ok
 
-	constexpr uintptr_t game_instance = 0x1A8; // world + game_instance // TYPE=uintptr_t
+	constexpr uintptr_t game_instance = 0x1A8; // world + game_instance // TYPE=uintptr_t = ok
 	constexpr uintptr_t persistent_level = 0x38; // world + persistent_level // TYPE=uintptr_t
 
 	constexpr uintptr_t local_player_array = 0x40; // game_instance + local_player_array // TYPE=uintptr_t
@@ -34,7 +34,7 @@ namespace offsets {
 	constexpr uintptr_t damage_handler = 0x928; // actor/local_player_pawn + damage_handler // TYPE=uintptr_t
 	constexpr uintptr_t health = 0x1B0; // damage_handler + health // TYPE=float
 	constexpr uintptr_t dormant = 0x100; // actor + dormant // TYPE=bool
-	constexpr uintptr_t player_state = 0x3D0; // actor/local_player_pawn + player_state // TYPE=uintptr_t
+	constexpr uintptr_t player_state = 0x3F0; // actor/local_player_pawn + player_state // TYPE=uintptr_t
 	constexpr uintptr_t team_component = 0x580; // player_state + team_component // TYPE=uintptr_t
 	constexpr uintptr_t team_id = 0xF8; // team_component + team_id // TYPE=int
 }
