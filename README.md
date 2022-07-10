@@ -6,4 +6,4 @@ You have to copy the Roboto-Light.ttf file from the second vexternal folder into
 
 It should compile without changing anything, but you have to implement your own memory r/w mechanic to work, also the offsets are probably outdated as this cheat will very likely not receive any updates, and you have to implement a guarded regions bypass.
 
-USE screen 1980x1080
+Screen MOD = 1920x1080
